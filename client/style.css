@@ -5,13 +5,20 @@
   font-family: "system-ui";
 }
 
+a{
+  color: inherit;
+}
+
 body {
   background: #343541;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100svh;
 }
 
 #app {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background: #343541;
   display: flex;
   flex-direction: column;
@@ -96,9 +103,10 @@ body {
 }
 
 form {
-  width: 100%;
+  width: 90%;
   max-width: 80rem;
-  margin: 0 auto;
+  position: relative;
+  left: -2.5%;
   margin:1rem;
   padding: 0.625rem;
   background: #40414F;
@@ -137,4 +145,7 @@ form img {
   gap: 0.5rem;
   margin: 0.3rem;
   color: gray;
+  position: relative;
+  top: -1.3rem;
+  font-size: 0.8rem;
 }
